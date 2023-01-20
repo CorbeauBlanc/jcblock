@@ -6,10 +6,9 @@
 # of the line (out to 80 chars) can contain a comment of your choosing. Any
 # change you make will be recognized by a running jcblock program.
 # ******Do not use tabs in the entries!!******
+#
 # Examples (without the initial '#' chars!):
+#Tested field:     Date field:   Comment field:
 #8005551212?        ------         your best friend's home number
 #5081232121?        ------         your best friend's cell phone number
 #                  | <---- the 20th column
-#Tested field:     Date field:   Comment field:
-8005551212?        052410        Joe's home number
-5081231212?        052410        Joe's cell number
