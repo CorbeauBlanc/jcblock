@@ -3,9 +3,9 @@
 # Then run it with: ./makejcblock
 
 # For first-time users, use this compile command:
-#gcc -o jcblock jcblock.c truncate.c -lm
+gcc -o jcblock jcblock.c truncate.c -lm
 
 # If you want to try additional options, activate them in
 # jcblock.c (i.e., uncomment DO_TONES, SEND_ON_NETWORK etc.) and
 # use this compile command:
-gcc -o jcblock jcblock.c tones.c truncate.c radio.c -lasound -ldl -lm
+#gcc -o jcblock jcblock.c tones.c truncate.c radio.c -lasound -ldl -lm

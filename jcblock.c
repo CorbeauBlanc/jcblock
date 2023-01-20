@@ -58,11 +58,11 @@
 // Sewell modem and use the jcblockAT program. This option provides
 // very reliable *-key detection. You need to have the ALSA
 // asoundlib library installed to use the DO_TONES option.
-#define DO_TONES
+//#define DO_TONES
 
 // Comment out the following define if you don't have an answering
 // machine attached to the same telephone line.
-//#define ANS_MACHINE
+#define ANS_MACHINE
 
 // Comment out the following define if you don't want truncation of
 // records older than nine months from files blacklist.dat and

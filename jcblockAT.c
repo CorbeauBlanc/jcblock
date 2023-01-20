@@ -56,7 +56,7 @@
 
 // Comment out the following define if you don't have an answering
 // machine attached to the same telephone line.
-//#define ANS_MACHINE
+#define ANS_MACHINE
 
 // Comment out the following define if you don't want truncation of
 // records older than nine months from files blacklist.dat and
