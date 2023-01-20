@@ -1,15 +1,13 @@
 | Foreword: |
 |:---|
 | <br/>This repository is a fork of Walter S. Heath's Junk Calls Blocker : https://sourceforge.net/projects/jcblock/ <br/><br/> My goal here is not to make extensive changes to it, only what is necessary to make it work properly; fix some things here, format some other there, nothing too crazy (as I won't have the time to maintain it anyway). <br/> I have a french phone provider, my setup is a Raspberry Pi Zero with a Sewel-like modem (https://www.amazon.fr/dp/B016MXLCEQ) |
-||
 
 
-
-Program: jcblock
+## Program: jcblock
 
 A program to block telemarketing (junk) calls.
 
-PROGRAM DESCRIPTION:
+### PROGRAM DESCRIPTION:
 
 This program connects to a modem and listens for the caller ID string that is sent between the first and second rings.
 Itrecords the string in file callerID.dat.
@@ -29,7 +27,7 @@ Records in the callerID.dat file that are older than nine months are removed.
 The operations are performed every thirty days. 
 Alternatively, entries in the .dat files may be edited manually.
 
-EDITORIAL NOTE:
+### EDITORIAL NOTE:
 The next few paragraphs describe a method for detecting a star (\*, asterick) key press using a mic to listen for the tones produced by a modem's speaker.
 The performance of this method has always been marginal. An ATian modem provides a better way. It is a voice/FAX modem.
 As such it contains circuitry to detect touchtone keypad entries. This feature is now used to detect a \*-key press.
@@ -74,7 +72,7 @@ Here is a full list of the alsa packages I have installed on my Ubuntu 10.04 mac
 | libasound2 | libasound2-doc | libasound2-dev |
 | libasound2-plugins | libsdl1.2debian-alsa | linux-sound-base |
 | gstreamer0.10-alsa | bluez-alsa | libao2 |
-||||
+
 No doubt some of these are not needed for the jcblock program, but if you install all of them, jcblock should run.
 
 If jcblock is run on a desktop or laptop, a microphone must be placed near the modem's speaker and turned on.
@@ -88,7 +86,7 @@ Remember to keep the phone you answer with away from the mic, since the mic will
 
 For continuous use, the program should be run on a low-power single board computer so that it can be left on all the time.
 
-More on the whitelist:
+### More on the whitelist:
 
 As a result of operational experience it became evident that the addition of a whitelist capability would be helpful.
 The whitelist file (whitelist.dat) holds entries containing the telephone numbers of calls the user definitely wants to accept.
@@ -108,7 +106,7 @@ As another example, a person might want to receive calls from just certain numbe
 In that case the records for the numbers of interest would be placed in the whitelist and a single record placed in the blacklist that contains a field that is present in all caller IDs (e.g., 'NMBR').
 Then all calls not matched by records in the whitelist would be terminated.
 
-Wrap-up:
+### Wrap-up:
 
 The most detailed source of documentation for the project it the comments in the listings. I have added many for this purpose.
 The system runs continuously at our home and terminates junk calls indicated in the blacklist file.
