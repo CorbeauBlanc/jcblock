@@ -29,7 +29,7 @@
 #ifndef MKADDR_H
 #define MKADDR_H
 
-//static const int PORT = 9753;
+static const int PORT = 9753;
 int broadcast(const char * const what);
- 
+
 #endif
