@@ -22,15 +22,15 @@
  *	Declarations common to all .c files.
  */
 
+#ifndef COMMON_H
+#define COMMON_H
+
 typedef int bool;
 
 #ifndef TRUE
   #define TRUE 1
   #define FALSE 0
 #endif
-
-#ifndef COMMON_H
-#define COMMON_H
 
 // Declarations for functions defined in file tones.c.
 void tonesInit();
